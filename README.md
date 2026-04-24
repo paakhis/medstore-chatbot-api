@@ -1,28 +1,40 @@
-# ChatBot💬 WebApp in Python using Flask
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)                 
-[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)   
+# Backend Chatbot API using Flask
 
+A backend-focused chatbot system built using **Flask**, demonstrating **REST API design**, **intent-based request handling**, and **structured backend logic** for handling user queries in an eCommerce-style environment.
 
-## [Follow us on Instagram for Machine Learning Guidelines & Path](https://www.instagram.com/machine_learning_hub.ai/)
-## [Donate me on PayPal(It will inspire me to do more projects)](https://www.paypal.me/spidy1820)
-## Donate me on GPAY:- kushalbhavsar58-1@okaxis
+---
 
-## Usage:-
-- Download this repository via GIT or zip.
-- Open CMD in directory of this repository(Python 3.6 should be installed)
-- type `pip install -r requirements.txt`.
-- After installation run `app.py`.
-- Go to the `127.0.0.1:5000/chatbot`, You can start chatting.
+## Key Features
 
-## Screenshots
-<img src="https://github.com/Spidy20/Flask_NLP_ChatBot/blob/master/1.png">
-<img src="https://github.com/Spidy20/Flask_NLP_ChatBot/blob/master/2.png">
+- RESTful API endpoint for handling user queries
+- Intent-based routing for predictable responses
+- Modular backend structure (separation of logic and routing)
+- Fallback NLP integration using ChatterBot
+- Clean request → processing → response flow
 
+---
 
-## Notes:- 
-- **This is just basic chatbot, you can improve chatbot learning. Read [documentation](https://pypi.org/project/ChatterBot/)**
-- **For better Chatbot development you can use Dialogflow.**
-- **Even you can do better chatbot development with this strategy also. You just need to train a NLP model in better way.**
+## Tech Stack
 
+- Python
+- Flask (Backend API)
+- ChatterBot (NLP integration)
+- HTML/CSS (basic interface)
 
-## Just follow☝️ me and Star⭐ my repository 
+---
+
+## How It Works
+
+The system processes user requests through a structured backend flow:
+### 1. API Layer
+- Handles incoming HTTP requests
+- Extracts user input
+
+### 2. Intent-Based Routing
+- Identifies user intent using keyword-based logic
+- Routes request to appropriate handler
+
+### 3. Response Generation
+- Returns domain-specific responses (products, orders, etc.)
+- Falls back to NLP model for general queries
+
